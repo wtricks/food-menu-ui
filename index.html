@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="./images/food-plaza.png" type="image/x-icon">
+    <title>Food Menu | Home</title>
+</head>
+<body>
+    <!-- Sidebar UI -->
+    <aside class="sidebar" data-mode="close">
+        <div class="main-data">
+            <img src="./images/food-plaza.png" alt="Food Plaza">
+            <h2>Your Restarant Menu</h2>
+            <p>Your Slogan</p>
+
+            <div class="divider"></div>
+        </div>
+
+        <h3>Quick Links</h3>
+        <ul class="menu" role="list">
+            <li role="listitem">
+                <a href="#" class="active">Home</a>
+            </li>
+            <li role="listitem">
+                <a href="#" class="">Your Orders</a>
+            </li>
+            <li role="listitem">
+                <a href="#" class="">Wallet</a>
+            </li>
+            <li role="listitem">
+                <a href="#" class="logout">Logout</a>
+            </li>
+        </ol>
+
+        <div class="divider"></div>
+
+        <h3>More About us</h3>
+        <ul class="menu" role="list">
+            <li role="listitem">
+                <a href="#" class="">Our blog</a>
+            </li>
+            <li role="listitem">
+                <a href="#" class="">Upcoming Dishes</a>
+            </li>
+            <li role="listitem">
+                <a href="#" class="">Our Story</a>
+            </li>
+            <li role="listitem">
+                <a href="#" class="">Social Media Links</a>
+            </li>
+        </ol>
+    </aside>
+
+    <!-- Actual main content -->
+    <div class="main-content">
+        <header>
+            <div class="header-content">
+                <div class="search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21L16.65 16.65" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <input type="search" name="Search" id="Search" placeholder="Search food items">
+                </div>
+
+                <div class="header-btn">
+                    <button type="button">Sign up</button>
+                    <button type="button">Login</button>
+                </div>
+            </div>
+
+            <button class="profile-btn" type="button">
+                <img src="./images/food-plaza.png" alt="Profile Avatar">
+            </button>
+        </header>
+        
+        <!-- Main content -->
+        <main>
+            <div class="banner">
+                <img src="./images/banner.png" alt="Hero Image">
+            </div>
+
+            <h2>Menu</h2>
+            <div class="menu-items" id="menu-container">
+                <!-- Menu items will be injected here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
