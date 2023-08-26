@@ -1,4 +1,4 @@
-const ORDER_ITEMS = [];
+
 const MENU_ITEMS = []
 
 document.querySelector(".profile-btn").addEventListener('click', () => {
@@ -35,12 +35,13 @@ const getMenu = () => {
 const takeOrder = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
+            const ORDER_ITEMS = [];
             for(let i = 0; i < 3; i++) {
                 const RANDOM_INDEX = Math.floor(Math.random() * MENU_ITEMS.length)
                 ORDER_ITEMS.push(MENU_ITEMS[RANDOM_INDEX]);
             }
 
-            resolve(true);
+            resolve(ORDER_ITEMS);
         }, 2500)
     })
 }
@@ -101,8 +102,8 @@ const insertData = (data) => {
 
 window.addEventListener('DOMContentLoaded', async () => {
     await getMenu();
-    await takeOrder();
-    await orderPrep();
-    await payOrder();
+    console.log("Order Placed:", await takeOrder());
+    console.log("Order preparetion status:", await orderPrep());
+    console.log("Payment status:", await payOrder());
     thankyou();
 });
